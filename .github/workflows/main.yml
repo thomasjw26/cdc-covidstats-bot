@@ -18,7 +18,7 @@ jobs:
     # Step 2: Get the latest data and store it as a CSV
     - name: Fetch latest data
       run: |-        
-        curl "blob:https://covid.cdc.gov/8156e544-9d35-4521-9454-111cab8c1bb7" -o covid_current.csv
+        curl "https://covid.cdc.gov/8156e544-9d35-4521-9454-111cab8c1bb7" -o covid_current.csv
     # Step 3: Commit and push
     - name: Commit and push
       run: |-
